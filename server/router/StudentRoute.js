@@ -1,0 +1,10 @@
+const express=require('express');
+const route=express.Router();
+const student=require('../Controller/StudentController');
+route.post('/postdata',student.postData);
+route.get('/getavgfirst',student.getAvgFirst);
+route.get('/getAvgSecond',student.getAvgSecond);
+route.get('/getavgfirstper',student.getAvgFirstper);
+route.get('/getAvgSecondper',student.getAvgSecondper);
+route.get('/selecttwostud',student.selecttwostud);
+module.exports=route;
